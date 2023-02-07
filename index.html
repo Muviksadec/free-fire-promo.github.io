@@ -1,0 +1,657 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>CSGO-MAGAZIN.RU - честный интернет магазин аккаунтов кс го на любой вкус: с праймом, с инвентарем, с трейд баном, со званием, с ножом</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="favicon.png" rel="icon" sizes="140x140" type="image/png">
+<link href="favicon.png" rel="icon" sizes="140x140" type="image/png">
+<link href="favicon.png" rel="icon" sizes="140x140" type="image/png">
+<link href="style/font-awesome.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto:500,400BLYAA&display=swap" rel="stylesheet">
+<link href="style/csgo-magazin.css" rel="stylesheet">
+<link href="style/index.css" rel="stylesheet">
+<script src="script/jquery-3.6.0.min.js"></script>
+<script src="script/util.min.js"></script>
+<script src="script/modal.min.js"></script>
+<script src="script/wwb17.min.js"></script>
+<script>
+$(document).ready(function()
+{
+   $('#wb_top').addClass('visibility-hidden');
+   $('#menu-mob').on('show.bs.modal', function (e) 
+   {
+      $('#menu-mob .modal-dialog').removeClass('animate-hide');
+      $('#menu-mob .modal-dialog').addClass('animate-show');
+   });
+   $('#menu-mob').on('hide.bs.modal', function (e)
+   {
+      $('#menu-mob .modal-dialog').removeClass('animate-show');
+      var element = document.getElementById('menu-mob');
+      var forceReflow = element.offsetWidth;
+      $('#menu-mob .modal-dialog').addClass('animate-hide');
+   });
+   function onScrollleftbar()
+   {
+      var $obj = $("#wb_leftbar");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(true))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('wb_leftbar', 'filter-blur-in', 0, 500);
+      }
+   }
+   onScrollleftbar();
+   $(window).scroll(function(event)
+   {
+      onScrollleftbar();
+   });
+   function onScrolltop()
+   {
+      var $obj = $("#wb_top");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(true))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('wb_top', 'filter-blur-in', 0, 500);
+      }
+   }
+   onScrolltop();
+   $(window).scroll(function(event)
+   {
+      onScrolltop();
+   });
+});
+</script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EX6Y4EZLE2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-EX6Y4EZLE2');
+</script>
+</head>
+<body>
+<div id="wb_LayoutGrid2">
+<div id="LayoutGrid2">
+<div class="col-1">
+<div id="wb_leftbar">
+<div id="leftbar">
+<div class="row">
+<div class="col-1">
+<div id="wb_logo">
+<a href="index.php.html"><img src="images/logo.png" id="logo" alt="" width="268" height="234"></a>
+</div>
+<div id="wb_home" class="card" onclick="window.location.href='./index.php';return false;">
+   <div id="home-card-body">
+      <div id="home-card-item0"><a href="index.php.html" class="stretched-link"><i class="house-fill"></i>Главная</a></div>
+   </div>
+</div>
+<div id="wb__guarantee" class="card" onclick="window.location.href='./info/garant.php';return false;">
+   <div id="_guarantee-card-body">
+      <div id="_guarantee-card-item0"><a href="info/garant.php.html" class="stretched-link"><i class="shield-fill-check"></i>Гарантии</a></div>
+   </div>
+</div>
+<div id="wb__reviews" class="card" onclick="window.location.href='./info/otzivi.php';return false;">
+   <div id="_reviews-card-body">
+      <div id="_reviews-card-item0"><a href="info/otzivi.php.html" class="stretched-link"><i class="chat-left-dots-fill"></i>Отзывы</a></div>
+   </div>
+</div>
+<div id="wb_regulations" class="card" onclick="window.location.href='./info/pravila.php';return false;">
+   <div id="regulations-card-body">
+      <div id="regulations-card-item0"><a href="info/pravila.php.html" class="stretched-link"><i class="book-half"></i>Правила</a></div>
+   </div>
+</div>
+<div id="wb_faq" class="card" onclick="window.location.href='./info/faq.php';return false;">
+   <div id="faq-card-body">
+      <div id="faq-card-item0"><a href="info/faq.php.html" class="stretched-link"><i class="question-circle-fill"></i>F.A.Q</a></div>
+   </div>
+</div>
+<div id="wb_support" class="card" onclick="window.location.href='./info/support.php';return false;">
+   <div id="support-card-body">
+      <div id="support-card-item0"><a href="info/support.php.html" class="stretched-link"><i class="life-preserver"></i>Поддержка</a></div>
+   </div>
+</div>
+<hr id="Linemenu">
+<div id="wb_category" class="card">
+   <div id="category-card-body">
+      <div id="category-card-item0"><i class="list-ul"></i>Категории</div>
+   </div>
+</div>
+<div id="wb_prime" class="card" onclick="window.location.href='./prime/index.php';return false;">
+   <div id="prime-card-body">
+      <div id="prime-card-item0"><a href="prime/index.php.html" class="stretched-link">Прайм</a></div>
+   </div>
+</div>
+<div id="wb_trade-ban" class="card" onclick="window.location.href='./trade-ban/index.php';return false;">
+   <div id="trade-ban-card-body">
+      <div id="trade-ban-card-item0"><a href="trade-ban/index.php.html" class="stretched-link">Трейд бан</a></div>
+   </div>
+</div>
+<div id="wb_rank" class="card" onclick="window.location.href='./rank/index.php';return false;">
+   <div id="rank-card-body">
+      <div id="rank-card-item0"><a href="rank/index.php.html" class="stretched-link">Звания</a></div>
+   </div>
+</div>
+<div id="wb_none-prime" class="card" onclick="window.location.href='./none-prime/index.php';return false;">
+   <div id="none-prime-card-body">
+      <div id="none-prime-card-item0"><a href="none-prime/index.php.html" class="stretched-link">Без прайма</a></div>
+   </div>
+</div>
+<div id="wb_inventory" class="card" onclick="window.location.href='./inventory/index.php';return false;">
+   <div id="inventory-card-body">
+      <div id="inventory-card-item0"><a href="inventory/index.php.html" class="stretched-link">Инвентарь</a></div>
+   </div>
+</div>
+<div id="wb_medals" class="card" onclick="window.location.href='./medals/index.php';return false;">
+   <div id="medals-card-body">
+      <div id="medals-card-item0"><a href="medals/index.php.html" class="stretched-link">Медали</a></div>
+   </div>
+</div>
+<div id="wb_vac-ban" class="card" onclick="window.location.href='./vac-ban/vac-ban-1.php';return false;">
+   <div id="vac-ban-card-body">
+      <div id="vac-ban-card-item0"><a href="vac-ban/index.php.html" class="stretched-link">Вак бан</a></div>
+   </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_mob-menu">
+<div id="mob-menu">
+<div class="col-1">
+<div id="wb_logo-mob">
+<a href="index.php.html"><img src="images/logo.png" id="logo-mob" alt="" width="347" height="302"></a>
+</div>
+</div>
+<div class="col-2">
+<div id="wb_menu-mob-open">
+<a href="index.html#" onclick="$('#menu-mob').modal('show');return false;"><img src="images/menu-mob-open.png" id="menu-mob-open" alt="" width="40" height="40"></a>
+</div>
+</div>
+</div>
+</div>
+<div id="menu-mob" class="modal fade" role="dialog">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-body">
+<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+<div id="wb_mob-catalog" class="card" onclick="window.location.href='./catalog.php';return false;">
+   <div id="mob-catalog-card-body">
+      <div id="mob-catalog-card-item0">Каталог</div>
+   </div>
+</div>
+<div id="wb_mon-garant" class="card" onclick="window.location.href='./info/garant.php';return false;">
+   <div id="mon-garant-card-body">
+      <div id="mon-garant-card-item0">Гарантии</div>
+   </div>
+</div>
+<div id="wb_mob-pay" class="card" onclick="window.location.href='./redactor/footer.php';return false;">
+   <div id="mob-pay-card-body">
+      <div id="mob-pay-card-item0">Отзывы</div>
+   </div>
+</div>
+<div id="wb_mob-pravila" class="card" onclick="window.location.href='./info/pravila.php';return false;">
+   <div id="mob-pravila-card-body">
+      <div id="mob-pravila-card-item0">Правила</div>
+   </div>
+</div>
+<div id="wb_mob-faq" class="card" onclick="window.location.href='./info/faq.php';return false;">
+   <div id="mob-faq-card-body">
+      <div id="mob-faq-card-item0">F.A.Q</div>
+   </div>
+</div>
+<div id="wb_mob-support" class="card" onclick="window.location.href='./info/support.php';return false;">
+   <div id="mob-support-card-body">
+      <div id="mob-support-card-item0">Контакты и поддержка</div>
+   </div>
+</div>
+<div id="wb_mob-purchase" class="card">
+   <div id="mob-purchase-card-body">
+      <div id="mob-purchase-card-item0"><a href="rank/index.php.html" class="stretched-link"><i class="shopping-basket"></i>Мои покупки</a></div>
+   </div>
+</div>
+<div id="wb_mob-contact" class="card">
+   <div id="mob-contact-card-body">
+      <div id="mob-contact-card-item0">Контактная информация</div>
+      <div id="mob-contact-card-item1"><i class="fa fa-phone"></i>8 (861) 111-00-45</div>
+      <div id="mob-contact-card-item2"><i class="fa fa-envelope"></i>support@csgo-magazin.ru</div>
+      <div id="mob-contact-card-item3"><a href="https://vk.com/csgoshopru" target="_blank" class="stretched-link"><i class="fa fa-vk"></i></a></div>
+      <div id="mob-contact-card-item4"><a href="mailto:support@игромагазин.рф" class="stretched-link"><i class="fa fa-envelope"></i></a></div>
+   </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+<div class="col-2">
+<div id="wb_EmbeddedPage1">
+<div id="wb_LayoutGrid1">
+<div id="LayoutGrid1">
+<div class="row">
+<div class="col-1">
+<div id="wb_Card1" class="card">
+   <div id="Card1-card-body">
+      <div id="Card1-card-item0"><a href="catalog.php.html" class="stretched-link"><i class="view-apps"></i>Каталог</a></div>
+   </div>
+</div>
+<div id="wb_call" class="card">
+   <div id="call-card-body">
+      <div id="call-card-item0"><i class="phone"></i>8 (861) 111-00-45</div>
+   </div>
+</div>
+<div id="wb_mail" class="card">
+   <div id="mail-card-body">
+      <div id="mail-card-item0"><i class="mail"></i>support@csgo-shop.ru</div>
+   </div>
+</div>
+</div>
+<div class="col-2">
+<div id="wb_Card2" class="card">
+   <div id="Card2-card-body">
+      <div id="Card2-card-item0"><i class="person"></i></div>
+   </div>
+</div>
+<div id="wb_Card3" class="card">
+   <div id="Card3-card-body">
+      <div id="Card3-card-item0"><i class="person-plus"></i></div>
+   </div>
+</div>
+<div id="wb_Card4" class="card">
+   <div id="Card4-card-body">
+      <div id="Card4-card-item0"><i class="handbag"></i></div>
+   </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_mob-cat">
+<div id="mob-cat">
+<div class="row">
+<div class="col-1">
+<div id="wb_ResponsiveMenu1">
+<label class="toggle" for="ResponsiveMenu1-submenu" id="ResponsiveMenu1-title">Категории<span id="ResponsiveMenu1-icon"><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span></span></label>
+<input type="checkbox" id="ResponsiveMenu1-submenu">
+<ul class="ResponsiveMenu1" id="ResponsiveMenu1" role="menu">
+<li role="menuitem"><a href="catalog.php.html">Весь&nbsp;каталог</a></li>
+<li role="menuitem"><a href="prime/index.php.html">Прайм</a></li>
+<li role="menuitem"><a href="trade-ban/index.php.html">Трейд&nbsp;бан</a></li>
+<li role="menuitem"><a href="rank/index.php.html">Звания</a></li>
+<li role="menuitem"><a href="none-prime/index.php.html">Без&nbsp;прайма</a></li>
+<li role="menuitem"><a href="inventory/index.php.html">Инвентарь</a></li>
+<li role="menuitem"><a href="medals/index.php.html">Медали</a></li>
+<li role="menuitem"><a href="vac-ban/index.php.html">Вак&nbsp;бан</a></li>
+</ul>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+<div id="wb_top">
+<div id="top">
+<div class="col-1">
+<div class="col-1-overlay"></div>
+<div id="wb_account-prime-global-elite" class="card">
+   <div id="account-prime-global-elite-card-body">
+      <div id="account-prime-global-elite-card-item0"><h1>CS:GO PRIME GLOBAL ELITE</h1></div>
+      <div id="account-prime-global-elite-card-item1">- PRIME STATUS имеется.<br>- От 50 до 5000 часов в CSGO.<br>- От 60 побед в соревновательном.<br>- Без запуска софта.<br>- FACEIT не привязан.<br>- ВОЗМОЖНЫ рандомные медали / монеты за выслугу.<br>- После оплаты вы получаете данные от аккаунта и от почты.</div>
+      <div id="account-prime-global-elite-card-item2">891 Р</div>
+      <div id="account-prime-global-elite-card-item3">1199 Р</div>
+      <div id="account-prime-global-elite-card-item4">-25%</div>
+      <hr id="account-prime-global-elite-card-item5">
+      <div id="account-prime-global-elite-card-item6"><a href="rank/prime-global-elite.php.html" class="stretched-link">ПЕРЕЙТИ</a></div>
+   </div>
+</div>
+</div>
+<div class="col-2">
+<div id="wb_random-acc" class="card">
+   <div id="random-acc-card-body">
+      <div id="random-acc-card-item0">СЛУЧАЙНЫЙ<br>ТОПОВЫЙ АКК</div>
+      <div id="random-acc-card-item1"><a href="inventory/index.php.html" class="stretched-link">ПОДРОБНЕЕ<i class="fa fa-arrow-right"></i></a></div>
+   </div>
+</div>
+<div id="wb_medals-5-10-years" class="card">
+   <div id="medals-5-10-years-card-body">
+      <div id="medals-5-10-years-card-item0">АККАУНТЫ С МОНЕТОЙ<br>5 И 10 ЛЕТ</div>
+      <div id="medals-5-10-years-card-item1"><a href="medals/index.php.html" class="stretched-link">ПОДРОБНЕЕ<i class="fa fa-arrow-right"></i></a></div>
+   </div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_Card7" class="card">
+   <div id="Card7-card-body">
+      <div id="Card7-card-item0"><h1>CS:GO Prime - трейд бан + медаль 5 + медаль за службу 2016</h1></div>
+      <div id="Card7-card-item1">ИНФОРМАЦИЯ</div>
+      <div id="Card7-card-item2"><a href="prime/prime-trade-ban.php.html" class="stretched-link">Последний актив:</a></div>
+      <div id="Card7-card-item3">26.05.2022</div>
+      <hr id="Card7-card-item4">
+      <div id="Card7-card-item5">Наличие лимита:</div>
+      <div id="Card7-card-item6">Нет</div>
+      <hr id="Card7-card-item7">
+      <div id="Card7-card-item8">Гарантия аккаунта:</div>
+      <div id="Card7-card-item9">1 месяц</div>
+      <hr id="Card7-card-item10">
+      <div id="Card7-card-item11">Происхождение:</div>
+      <div id="Card7-card-item12">Перекуп</div>
+      <hr id="Card7-card-item13">
+      <div id="Card7-card-item14">99 руб.</div>
+      <div id="Card7-card-item15"><i class="handbag"></i>Купить</div>
+   </div>
+</div>
+<div id="wb_Card5" class="card">
+   <div id="Card5-card-body">
+      <div id="Card5-card-item0"><h1>CS:GO Free</h1></div>
+      <div id="Card5-card-item1">ИНФОРМАЦИЯ</div>
+      <div id="Card5-card-item2"><a href="none-prime/non-prime-1.php.html" class="stretched-link">Последний актив:</a></div>
+      <div id="Card5-card-item3">9.10.2022</div>
+      <hr id="Card5-card-item4">
+      <div id="Card5-card-item5">Наличие лимита:</div>
+      <div id="Card5-card-item6">Есть</div>
+      <hr id="Card5-card-item7">
+      <div id="Card5-card-item8">Гарантия аккаунта:</div>
+      <div id="Card5-card-item9">1 год</div>
+      <hr id="Card5-card-item10">
+      <div id="Card5-card-item11">Происхождение:</div>
+      <div id="Card5-card-item12">Личный</div>
+      <hr id="Card5-card-item13">
+      <div id="Card5-card-item14">50 руб.</div>
+      <div id="Card5-card-item15"><i class="handbag"></i>Купить</div>
+   </div>
+</div>
+<div id="wb_Card6" class="card">
+   <div id="Card6-card-body">
+      <div id="Card6-card-item0"><h1>CS:GO Free - инвентарь 40 скинов</h1></div>
+      <div id="Card6-card-item1">ИНФОРМАЦИЯ</div>
+      <div id="Card6-card-item2"><a href="none-prime/none-prime-40-skinov.php.html" class="stretched-link">Последний актив:</a></div>
+      <div id="Card6-card-item3">Более 1 года</div>
+      <hr id="Card6-card-item4">
+      <div id="Card6-card-item5">Наличие лимита:</div>
+      <div id="Card6-card-item6">Есть</div>
+      <hr id="Card6-card-item7">
+      <div id="Card6-card-item8">Гарантия аккаунта:</div>
+      <div id="Card6-card-item9">1 год</div>
+      <hr id="Card6-card-item10">
+      <div id="Card6-card-item11">Происхождение:</div>
+      <div id="Card6-card-item12">Личный</div>
+      <hr id="Card6-card-item13">
+      <div id="Card6-card-item14">79 руб.</div>
+      <div id="Card6-card-item15"><i class="handbag"></i>Купить</div>
+   </div>
+</div>
+<div id="wb_Card8" class="card">
+   <div id="Card8-card-body">
+      <div id="Card8-card-item0"><h1>CS:GO Free - 15 лет выслуги - медали 5 и 10 лет + 22 игры</h1></div>
+      <div id="Card8-card-item1">ИНФОРМАЦИЯ</div>
+      <div id="Card8-card-item2"><a href="medals/15-years-1.php.html" class="stretched-link">Последний актив:</a></div>
+      <div id="Card8-card-item3">2010</div>
+      <hr id="Card8-card-item4">
+      <div id="Card8-card-item5">Наличие лимита:</div>
+      <div id="Card8-card-item6">Есть</div>
+      <hr id="Card8-card-item7">
+      <div id="Card8-card-item8">Гарантия аккаунта:</div>
+      <div id="Card8-card-item9">1 год</div>
+      <hr id="Card8-card-item10">
+      <div id="Card8-card-item11">Происхождение:</div>
+      <div id="Card8-card-item12">Личный</div>
+      <hr id="Card8-card-item13">
+      <div id="Card8-card-item14">169 руб.</div>
+      <div id="Card8-card-item15"><i class="handbag"></i>Купить</div>
+   </div>
+</div>
+<div id="wb_Card9" class="card">
+   <div id="Card9-card-body">
+      <div id="Card9-card-item0"><h1>CS:GO Free - 11 лет выслуги - медали 5 и 10 лет + cs 1.6</h1></div>
+      <div id="Card9-card-item1">ИНФОРМАЦИЯ</div>
+      <div id="Card9-card-item2"><a href="medals/11-years-1.php.html" class="stretched-link">Последний актив:</a></div>
+      <div id="Card9-card-item3">16.10.2021</div>
+      <hr id="Card9-card-item4">
+      <div id="Card9-card-item5">Наличие лимита:</div>
+      <div id="Card9-card-item6">Есть</div>
+      <hr id="Card9-card-item7">
+      <div id="Card9-card-item8">Гарантия аккаунта:</div>
+      <div id="Card9-card-item9">1 год</div>
+      <hr id="Card9-card-item10">
+      <div id="Card9-card-item11">Происхождение:</div>
+      <div id="Card9-card-item12">Личный</div>
+      <hr id="Card9-card-item13">
+      <div id="Card9-card-item14">119 руб.</div>
+      <div id="Card9-card-item15"><i class="handbag"></i>Купить</div>
+   </div>
+</div>
+<div id="wb_Card10" class="card">
+   <div id="Card10-card-body">
+      <div id="Card10-card-item0"><h1>CS:GO Prime - Вак бан + 14 игр + авп азимов</h1></div>
+      <div id="Card10-card-item1">ИНФОРМАЦИЯ</div>
+      <div id="Card10-card-item2"><a href="vac-ban/vac-ban-1.php.html" class="stretched-link">Последний актив:</a></div>
+      <div id="Card10-card-item3">16.10.2021</div>
+      <hr id="Card10-card-item4">
+      <div id="Card10-card-item5">Наличие лимита:</div>
+      <div id="Card10-card-item6">Есть</div>
+      <hr id="Card10-card-item7">
+      <div id="Card10-card-item8">Гарантия аккаунта:</div>
+      <div id="Card10-card-item9">1 месяц</div>
+      <hr id="Card10-card-item10">
+      <div id="Card10-card-item11">Происхождение:</div>
+      <div id="Card10-card-item12">Перекуп</div>
+      <hr id="Card10-card-item13">
+      <div id="Card10-card-item14">99 руб.</div>
+      <div id="Card10-card-item15"><i class="handbag"></i>Купить</div>
+   </div>
+</div>
+<div id="wb_Card11" class="card">
+   <div id="Card11-card-body">
+      <div id="Card11-card-item0"><h1>CS:GO Prime - «калаш» с венками - медаль - Медаль за службу в 2021</h1></div>
+      <div id="Card11-card-item1">ИНФОРМАЦИЯ</div>
+      <div id="Card11-card-item2"><a href="prime/prime-2.php.html" class="stretched-link">Последний актив:</a></div>
+      <div id="Card11-card-item3">7.09.2022</div>
+      <hr id="Card11-card-item4">
+      <div id="Card11-card-item5">Наличие лимита:</div>
+      <div id="Card11-card-item6">Нет</div>
+      <hr id="Card11-card-item7">
+      <div id="Card11-card-item8">Гарантия аккаунта:</div>
+      <div id="Card11-card-item9">14 дней</div>
+      <hr id="Card11-card-item10">
+      <div id="Card11-card-item11">Происхождение:</div>
+      <div id="Card11-card-item12">Перекуп</div>
+      <hr id="Card11-card-item13">
+      <div id="Card11-card-item14">149 руб.</div>
+      <div id="Card11-card-item15"><i class="handbag"></i>Купить</div>
+   </div>
+</div>
+<div id="wb_Card12" class="card">
+   <div id="Card12-card-body">
+      <div id="Card12-card-item0"><h1>CS:GO Prime - медаль - Медаль за службу в 2021 - инвентарь</h1></div>
+      <div id="Card12-card-item1">ИНФОРМАЦИЯ</div>
+      <div id="Card12-card-item2"><a href="prime/prime-3.php.html" class="stretched-link">Последний актив:</a></div>
+      <div id="Card12-card-item3">16.10.2021</div>
+      <hr id="Card12-card-item4">
+      <div id="Card12-card-item5">Наличие лимита:</div>
+      <div id="Card12-card-item6">Нет</div>
+      <hr id="Card12-card-item7">
+      <div id="Card12-card-item8">Гарантия аккаунта:</div>
+      <div id="Card12-card-item9">30 дней</div>
+      <hr id="Card12-card-item10">
+      <div id="Card12-card-item11">Происхождение:</div>
+      <div id="Card12-card-item12">Брут</div>
+      <hr id="Card12-card-item13">
+      <div id="Card12-card-item14">249 руб.</div>
+      <div id="Card12-card-item15"><i class="handbag"></i>Купить</div>
+   </div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_footer">
+<div id="footer">
+<div class="row">
+<div class="col-1">
+<div id="wb_EmbeddedPage3">
+<div id="wb_links">
+<div id="links-overlay"></div>
+<div id="links">
+<div class="row">
+<div class="col-1">
+<div id="wb_linksText1">
+<span style="color:#FFFFFF;">МАГАЗИН</span>
+</div>
+<div id="wb_linksMenu1">
+<ul id="linksMenu1" role="menubar" class="nav">
+<li role="menuitem" class="nav-item firstmain"><a class="nav-link" href="prime/index.php.html" target="_self">Прайм</a>
+</li>
+<li role="menuitem" class="nav-item"><a class="nav-link" href="trade-ban/index.php.html" target="_self">Трейд&nbsp;бан</a>
+</li>
+<li role="menuitem" class="nav-item"><a class="nav-link" href="rank/index.php.html" target="_self">Звания</a>
+</li>
+<li role="menuitem" class="nav-item"><a class="nav-link" href="none-prime/index.php.html" target="_self">Без&nbsp;прайма</a>
+</li>
+<li role="menuitem" class="nav-item"><a class="nav-link" href="inventory/index.php.html" target="_self">Инвентарь</a>
+</li>
+<li role="menuitem" class="nav-item"><a class="nav-link" href="medals/index.php.html" target="_self">Медали</a>
+</li>
+<li role="menuitem" class="nav-item"><a class="nav-link" href="vac-ban/index.php.html" target="_self">Вак&nbsp;бан</a>
+</li>
+</ul>
+
+</div>
+</div>
+<div class="col-2">
+<div id="wb_linksText2">
+<span style="color:#FFFFFF;">ИНФОРМАЦИЯ</span>
+</div>
+<div id="wb_CssMenu1">
+<ul id="CssMenu1" role="menubar" class="nav">
+<li role="menuitem" class="nav-item firstmain"><a class="nav-link" href="index.php.html" target="_self">Главная</a>
+</li>
+<li role="menuitem" class="nav-item"><a class="nav-link" href="info/garant.php.html" target="_self">Гарантии</a>
+</li>
+<li role="menuitem" class="nav-item"><a class="nav-link" href="info/otzivi.php.html" target="_self">Отзывы</a>
+</li>
+<li role="menuitem" class="nav-item"><a class="nav-link" href="info/pravila.php.html" target="_self">Правила</a>
+</li>
+<li role="menuitem" class="nav-item"><a class="nav-link" href="info/faq.php.html" target="_self">F.A.Q</a>
+</li>
+</ul>
+
+</div>
+</div>
+<div class="col-3">
+<div id="wb_linksText3">
+<span style="color:#FFFFFF;">ПОМОЩЬ</span>
+</div>
+<div id="wb_CssMenu2">
+<ul id="CssMenu2" role="menubar" class="nav">
+<li role="menuitem" class="nav-item firstmain"><a class="nav-link" href="info/support.php.html" target="_self">Техподдержка</a>
+</li>
+<li role="menuitem" class="nav-item"><a class="nav-link" href="https://vk.com/im?media=&sel=-130420324" target="_blank"><i class="chat-right-text"></i>&nbsp;Чат&nbsp;с&nbsp;консультантом</a>
+</li>
+</ul>
+
+</div>
+</div>
+<div class="col-4">
+<div id="wb_linksText4">
+<span style="color:#FFFFFF;">Техническая поддержка по общим вопросам:</span>
+</div>
+<div id="wb_CssMenu3">
+<ul id="CssMenu3" role="menubar" class="nav">
+<li role="menuitem" class="nav-item firstmain"><a class="nav-link" href="mailto:support@csgo-magazin.ru" target="_self"><i class="envelope"></i>&nbsp;support@csgo-magazin.ru</a>
+</li>
+</ul>
+
+</div>
+<div id="wb_linksText5">
+<span style="color:#FFFFFF;">Сотрудничество:</span>
+</div>
+<div id="wb_CssMenu4">
+<ul id="CssMenu4" role="menubar" class="nav">
+<li role="menuitem" class="nav-item firstmain"><a class="nav-link" href="mailto:marketing@csgo-magazin.ru" target="_self"><i class="envelope"></i>marketing@csgo-magazin.ru</a>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_footer-11">
+<div id="footer-11-overlay"></div>
+<div id="footer-11">
+<div class="col-1">
+<hr id="Line1">
+</div>
+<div class="col-2">
+<div id="wb_mob-contact-2" class="card">
+   <div id="mob-contact-2-card-body">
+      <div id="mob-contact-2-card-item0"><a href="https://vk.com/csgomagazinru" target="_blank"><i class="fa fa-vk"></i></a></div>
+      <div id="mob-contact-2-card-item1"><a href="mailto:support@csgo-magazin.ru"><i class="fa fa-envelope"></i></a></div>
+   </div>
+</div>
+</div>
+<div class="col-3">
+<hr id="Line2">
+</div>
+</div>
+</div>
+<div id="wb_footer-22">
+<div id="footer-22-overlay"></div>
+<div id="footer-22">
+<div class="col-1">
+<div id="wb_visa" class="card">
+   <div id="visa-card-body">
+      <img id="visa-card-item0" src="images/visa.png" width="50" height="50" alt="" title="">
+   </div>
+</div>
+<div id="wb_mastercard" class="card">
+   <div id="mastercard-card-body">
+      <img id="mastercard-card-item0" src="images/mastercard1.png" width="40" height="24" alt="" title="">
+   </div>
+</div>
+<div id="wb_mir" class="card">
+   <div id="mir-card-body">
+      <img id="mir-card-item0" src="images/mir.png" width="50" height="50" alt="" title="">
+   </div>
+</div>
+<div id="wb_qiwi" class="card">
+   <div id="qiwi-card-body">
+      <img id="qiwi-card-item0" src="images/qiwi.png" width="54" height="28" alt="" title="">
+   </div>
+</div>
+<div id="wb_yoomoney" class="card">
+   <div id="yoomoney-card-body">
+      <img id="yoomoney-card-item0" src="images/yoomoney.png" width="99" height="20" alt="" title="">
+   </div>
+</div>
+<div id="wb_webmoney" class="card">
+   <div id="webmoney-card-body">
+      <img id="webmoney-card-item0" src="images/webmoney.png" width="87" height="21" alt="" title="">
+   </div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_footer-33">
+<div id="footer-33-overlay"></div>
+<div id="footer-33">
+<div class="col-1">
+<hr id="Line3">
+<div id="wb_footer-text-1">
+<span style="color:#FFFFFF;">© 2022 CSGO-SHOP.RU<br>Все упомянутые товарные знаки, названия игр и компаний, логотипы, материалы являются<br>собственностью соответствующих владельцев.</span>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
